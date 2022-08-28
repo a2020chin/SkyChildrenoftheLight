@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply relative h-full
+    }
+    h2{
+        @apply text-primary text-[28px]
+    }
+    a{
+        @apply duration-500
+    }
+}
+@layer components{
+    .logo{
+        @apply indent-[101%] overflow-hidden whitespace-nowrap
+    }
+    .logo-btn{
+        @apply bg-[url('./assets/images/SkyLogo_header.png')] h-[70px] w-[70px] bg-no-repeat bg-cover block
+    }
+    .ig-color{
+        background:linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        color: transparent;
+        background-clip: text;
+    }
+}
